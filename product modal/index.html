@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Simple Tailwind Starter</title>
+    <title>Product Modal</title>
 </head>
+
 <body>
-    <h1 class="text-3xl">Tailwind</h1>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-700">
+        <!-- Card Container -->
+        <div
+            class="flex flex-col md:flex-row p-6 m-3 spacey-y-10 shadow-slate-900 bg-white rounded-2xl shadow-2xl md:space-y-0 md:space-x-10 md:p-16">
+            <!-- Image Div -->
+            <div>
+                <img src="./images/headphone.png" alt="headhone" class="mx-auto hover:scale-105 duration-200 w-60">
+            </div>
+
+            <!-- Content -->
+            <div class="flex flex-col space-y-6">
+                <!-- Label and Title Container -->
+                <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+                    <div>
+                        <div class="inline-block my-2 md:my-0 px-3 py-1 text-sm text-white bg-black rounded-full">
+                            Free Shipping
+                        </div>
+                    </div>
+                    <!-- Title-->
+                    <div class="max-w-sm text-2xl font-medium font-serif">
+                        Very Expensive Weeb Looking Headphone
+                    </div>
+                    <!-- Price Container -->
+                    <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+                        <p class="line-through">$999</p>
+                        <p class="text-5xl font-bold text-indigo-950">$799</p>
+                        <p class="text-sm font-light text-gray-500 tracking-wide">This Offer is vaild till 32nd of April
+                            or Till stock lasts! </p>
+                    </div>
+                    <!-- Button Group -->
+                    <div class="group">
+                        <button class="
+                        transition-all
+                        duration-200
+                        
+                        group-hover:border-t-8 
+                            group-hover:border-b-0
+                            group-hover:bg-blue-500 
+                            group-hover:border-t-blue-700 
+                            group-hover:shadow-xl
+                            
+                        
+                        w-full bg-blue-700 text-white border-b-8 border-b-blue-700 rounded-xl">
+                            <div class="px-8  duration-200 py-4 bg-blue-500 rounded-xl">
+                                Add to Cart
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Stock -->
+                    <div class="flex space-x-2 items-center group">
+                        <div class="w-3 h-3 bg-green-400 rounded-full group-hover:animate-ping"></div>
+                        <div class="text-sm">100+ pcs. in stock</div>
+                    </div>
+                    <!-- Button Bottom Container -->
+                    <div class="flex flex-col space-y-4 md:space-y0 md:space-x-4 md:flex-row">
+                        <button class="flex 
+                        items-center 
+                        justify-center 
+                        py-3 
+                        px-5 
+                        space-x-4 
+                        border-2 
+                        border-gray-500 
+                        rounded-xl 
+                        shadow-md 
+                        hover:bg-opacity-30 
+                        hover:shadow-xl 
+                        hover:-translate-y-0.5 
+                        transition-all 
+                        duration-200">
+
+                            <img src="./images/weight.png" alt="" class="w-6">
+                            <span>Add to cart</span>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col space-y-4 md:space-y0 md:space-x-4 md:flex-row">
+                        <button class="flex 
+                                            items-center 
+                                            justify-center 
+                                            py-3 
+                                            px-5 
+                                            space-x-4 
+                                            border-2 
+                                            border-gray-500 
+                                            rounded-xl 
+                                            shadow-md 
+                                            hover:bg-opacity-30 
+                                            hover:shadow-xl 
+                                            hover:-translate-y-0.5 
+                                            transition-all 
+                                            duration-200">
+                    
+                            <img src="./images/heart.png" alt="" class="w-6">
+                            <span>Add to Wishlist</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
